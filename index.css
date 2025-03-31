@@ -1,0 +1,107 @@
+body{
+    background-color:#393E46 ;
+}
+
+#div1{
+    height: 160px;
+    width: 100%;
+}
+
+h1{
+    color: #4ecca3;
+    text-shadow: 5px 0 #232931;
+    font-size: 8rem;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin: 30px 30px 30px 30px;
+}
+
+#container{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.dice{
+    display: inline-block;
+    text-align: center;
+    
+}
+
+p{
+    font-size: 2rem;
+    color: #4ecca3;
+    margin: 32px;
+}
+
+footer {
+    margin-top: 5%;
+    color: #EEEEEE;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+  
+  }
+
+
+
+
+  button {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Gradient effect */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+    display: block;
+    margin: 20px auto; /* Centering */
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+img {
+    transition: transform 0.5s ease-in-out;
+}
+
+img.rolling {
+    transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Reduce heading size */
+    }
+
+    #container {
+        flex-direction: column; /* Stack dice vertically */
+        gap: 20px; /* Reduce spacing */
+    }
+
+    .dice img {
+        width: 100px; /* Smaller dice images */
+    }
+
+    button {
+        width: 80%; /* Make button wider on small screens */
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 0.9rem; /* Slightly smaller footer text */
+    }
+}
